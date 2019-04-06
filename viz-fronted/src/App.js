@@ -27,9 +27,9 @@ const App = () => (
 		</Intro>
 		<GeneralOverview />
 		<MainActorsGraph />
+		<MostUsedDevices />
 		<RetweetRelation />
 		<TweetTimeSeries />
-		<MostUsedDevices />
 		<PopularHashtags />
 	</div>
 );
