@@ -17,6 +17,7 @@ const App = () => (
 				Social Science dataset - Swedish (<b>sudo-su</b>)
 			</p>
 		</header>
+
 		<GeneralOverview />
 		<MainActorsGraph />
 	</div>

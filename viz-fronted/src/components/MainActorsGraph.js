@@ -6,7 +6,7 @@ import HighchartsReact from 'highcharts-react-official';
 import { appStore } from '../state/appStore';
 
 const Div = styled.div`
-	margin: 5em;
+	margin: 4em 10em;
 `;
 
 const populateOptions = data => ({
