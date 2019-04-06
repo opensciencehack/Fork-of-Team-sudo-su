@@ -3,18 +3,18 @@ import { view } from 'react-easy-state';
 import styled from 'styled-components';
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
-import { appStore } from '../state/appStore';
 
 const Div = styled.div`
 	margin: 4em 10em;
 `;
 
-const populateOptions = data => ({
+const populateOptions = () => ({
 	credits: {
 		enabled: false
 	},
 	chart: {
-		type: 'column'
+		type: 'column',
+		height: (9 / 16) * 100 + '%' // 16:9 ratio
 	},
 	title: {
 		text: 'Central Actors'
@@ -80,6 +80,6 @@ const populateOptions = data => ({
 });
 export const MainActorsGraph = view(() => (
 	<Div>
-		<HighchartsReact highcharts={Highcharts} options={populateOptions(appStore.dataSets.visualization1)} />
+		<HighchartsReact highcharts={Highcharts} options={populateOptions()} />
 	</Div>
 ));
