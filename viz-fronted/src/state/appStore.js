@@ -1,2 +1,8 @@
 import { store } from 'react-easy-state';
-export const appStore = store({ team: 'sudo-su' });
+import { data } from '../dataSets/visualization1';
+export const appStore = store({
+	team: 'sudo-su',
+	dataSets: {
+		visualization1: data
+	}
+});
