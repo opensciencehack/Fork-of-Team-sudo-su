@@ -17,10 +17,10 @@ const populateOptions = () => ({
 		height: (9 / 16) * 100 + '%' // 16:9 ratio
 	},
 	title: {
-		text: 'Central Actors'
+		text: 'Main Actors'
 	},
 	subtitle: {
-		text: 'Most relevant tweeter users, based on their tweet count'
+		text: 'Users with the most amount of tweets'
 	},
 	xAxis: {
 		type: 'category',

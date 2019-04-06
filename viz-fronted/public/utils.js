@@ -1,64 +1,44 @@
 Highcharts.chart('container', {
+	credits: {
+		enabled: false
+	},
+	exporting: { enabled: false },
 	title: {
 		text: 'Retweet based dependency wheel'
 	},
+	subtitle: {
+		text: '<b>DiabetesSverige</b> is missing!'
+	},
 	chart: {
-		height: (9 / 16) * 100 + '%' // 16:9 ratio
+		height: (9 / 16) * 70 + '%' // 16:9 ratio
 	},
 	series: [
 		{
 			keys: ['from', 'to', 'weight'],
 			data: [
-				['Brazil', 'Portugal', 5],
-				['Brazil', 'France', 1],
-				['Brazil', 'Spain', 1],
-				['Brazil', 'England', 1],
-				['Canada', 'Portugal', 1],
-				['Canada', 'France', 5],
-				['Canada', 'England', 1],
-				['Mexico', 'Portugal', 1],
-				['Mexico', 'France', 1],
-				['Mexico', 'Spain', 5],
-				['Mexico', 'England', 1],
-				['USA', 'Portugal', 1],
-				['USA', 'France', 1],
-				['USA', 'Spain', 1],
-				['USA', 'England', 5],
-				['Portugal', 'Angola', 2],
-				['Portugal', 'Senegal', 1],
-				['Portugal', 'Morocco', 1],
-				['Portugal', 'South Africa', 3],
-				['France', 'Angola', 1],
-				['France', 'Senegal', 3],
-				['France', 'Mali', 3],
-				['France', 'Morocco', 3],
-				['France', 'South Africa', 1],
-				['Spain', 'Senegal', 1],
-				['Spain', 'Morocco', 3],
-				['Spain', 'South Africa', 1],
-				['England', 'Angola', 1],
-				['England', 'Senegal', 1],
-				['England', 'Morocco', 2],
-				['England', 'South Africa', 7],
-				['South Africa', 'China', 5],
-				['South Africa', 'India', 1],
-				['South Africa', 'Japan', 3],
-				['Angola', 'China', 5],
-				['Angola', 'India', 1],
-				['Angola', 'Japan', 3],
-				['Senegal', 'China', 5],
-				['Senegal', 'India', 1],
-				['Senegal', 'Japan', 3],
-				['Mali', 'China', 5],
-				['Mali', 'India', 1],
-				['Mali', 'Japan', 3],
-				['Morocco', 'China', 5],
-				['Morocco', 'India', 1],
-				['Morocco', 'Japan', 3],
-				['Japan', 'Brazil', 1]
+				['veronikapso', 'ssdf12diabetes', 16],
+				['biljettfrmedlin', 'Diamyd', 11],
+				['diabetesliitto', 'DiabetesLUDC', 11],
+				['HashtagBajen', 'Hammarbyfotboll', 10],
+				['medfak_LU', 'DiabetesLUDC', 10],
+				['traningslara', 'JacobGudiol', 10],
+				['Koltrast3', 'Diamyd', 8],
+				['KajsaAspJonson', 'DietisternasRF', 8],
+				['Ingrid_Helander', 'LmVarlden', 7],
+				['possobollotos', 'ssdf12diabetes', 6],
+				['BlottGott', 'BlottGott', 6],
+				['eve_sweden', 'Ardalsberget', 6],
+				['goteborgsuni', 'SahlgrenskaAcad', 5],
+				['BMrck', 'SahlgrenskaAcad', 5],
+				['GothiaForum', 'SahlgrenskaAcad', 5],
+				['Hassel2011', 'kvalitetsregist', 5],
+				['HashtagBajen', 'samhallsmatchen', 5],
+				['ankarklo', 'StEriksogon', 5],
+				['HjartLung', 'ssdf12diabetes', 4],
+				['MariaJonsson1', 'DiabetesLUDC', 4]
 			],
 			type: 'dependencywheel',
-			name: 'Dependency wheel series',
+			name: 'Amount of RT',
 			dataLabels: {
 				color: '#333',
 				textPath: {
