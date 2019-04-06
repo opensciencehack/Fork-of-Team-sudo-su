@@ -20,7 +20,6 @@ export const GeneralOverview = view(() => (
 		<Div>Total count of tweets: <b>11237</b></Div>
 		<Div>Recorded days: <b>267</b></Div>
 		<Div>Total count participants: <b></b></Div>
-		<Div>Dataset covering Swedish mentions to diabetes.</Div>
 		<ImageWrapper>
 			<iframe src="https://giphy.com/embed/26u6c4ygFTf27qUz6" width="480" height="269" frameBorder="0"
 				className="giphy-embed" allowFullScreen></iframe>

@@ -1,25 +1,36 @@
 import React from 'react';
+import styled from 'styled-components';
 import './App.css';
 import { GeneralOverview } from './components/GeneralOverview';
 import { MainActorsGraph } from './components/MainActorsGraph';
+import { RetweetRelation } from './components/RetweetRelation';
+import { TweetTimeSeries } from './components/TweetTimeSeries';
+import { MostUsedDevices } from './components/MostUsedDevices';
+import { PopularHashtags } from './components/PopularHashtags';
 
-// TODONOW: Central actors -> column chart
-// TODONOW: Relations between nodes -> node graph
-// TODONOW: tweet popularity over time, for the top 5 most popular users ->
-// TODONOW: which are the most used devices? -> pie chart
-// TODONOW: most popular hashtags
-// TODONOW: emoji analysis on the tweets
+const Intro = styled.div`
+	background-color: #282c34;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+`;
 
 const App = () => (
 	<div className="App">
-		<header className="App-header">
+		<Intro>
 			<p>
 				Social Science dataset - Swedish (<b>sudo-su</b>)
 			</p>
-		</header>
-
+		</Intro>
 		<GeneralOverview />
 		<MainActorsGraph />
+		<RetweetRelation />
+		<TweetTimeSeries />
+		<MostUsedDevices />
+		<PopularHashtags />
 	</div>
 );
 

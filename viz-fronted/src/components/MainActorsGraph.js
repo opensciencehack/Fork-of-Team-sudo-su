@@ -9,6 +9,7 @@ const Div = styled.div`
 	margin: 4em 10em;
 `;
 
+// TODONOW: get data and store in store
 const populateOptions = data => ({
 	credits: {
 		enabled: false
