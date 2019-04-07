@@ -4,7 +4,7 @@ import './App.css';
 import { GeneralOverview } from './components/GeneralOverview';
 import { MainActorsGraph } from './components/MainActorsGraph';
 import { RetweetRelation } from './components/RetweetRelation';
-import { TweetTimeSeries } from './components/TweetTimeSeries';
+import { TopicBubbleGraph } from './components/TopicBubbleGraph';
 import { MostUsedDevices } from './components/MostUsedDevices';
 import { HashTagWordCloud } from './components/HashTagWordCloud';
 
@@ -40,12 +40,12 @@ const App = () => (
 		<GeneralOverview />
 		</Wrapper>
 		<EntryWrapper>
-			<MainActorsGraph />
+			<mainactorsgraph />
 			<MostUsedDevices />
 		</EntryWrapper>
 		<RetweetRelation />
 		<HashTagWordCloud />
-		<TweetTimeSeries />
+		<TopicBubbleGraph />
 	</div>
 );
 
