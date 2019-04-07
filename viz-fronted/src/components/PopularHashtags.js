@@ -1,9 +1,12 @@
 import React from 'react';
-import { view } from 'react-easy-state';
 import styled from 'styled-components';
 
-const Wrapper = styled.div``;
+const Wrapper = styled.div`
+	margin: 4em 10em;
+`;
 
-// TODONOW: most popular hashtags -> word cloud
-// https://www.highcharts.com/demo/wordcloud
-export const PopularHashtags = view(() => <Wrapper>Popular hashtaags</Wrapper>);
+export const PopularHashtags = () => (
+	<Wrapper>
+		<div id="container-words" />
+	</Wrapper>
+);
