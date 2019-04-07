@@ -1,6 +1,6 @@
 # Open Science Hack 2019 [team sudo-su]
 
-![image](https://user-images.githubusercontent.com/16224847/55677319-ae81ad80-58e5-11e9-8307-fd2b05b7154a.png)
+![demo](https://user-images.githubusercontent.com/16224847/55677486-dfafad00-58e8-11e9-8eec-ff826773e830.gif)
 
 Open.Science.Hack 2019 hackathon project, focused on Social Science analysis.
 
