@@ -1,12 +1,7 @@
 import React from 'react';
 import { view } from 'react-easy-state';
-import styled from 'styled-components';
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
-
-const Wrapper = styled.div`
-	margin: 4em 10em;
-`;
 
 const options = {
 	credits: {
@@ -17,7 +12,7 @@ const options = {
 		plotBorderWidth: null,
 		plotShadow: false,
 		type: 'pie',
-		height: (9 / 16) * 100 + '%' // 16:9 ratio
+		height: (3 / 4) * 100 + '%' // 16:9 ratio
 	},
 	title: {
 		text: 'Device usage'
@@ -114,10 +109,8 @@ const options = {
 	]
 };
 
-// TODONOW: which are the most used devices? -> pie chart
-// https://www.highcharts.com/demo/pie-legend
 export const MostUsedDevices = view(() => (
-	<Wrapper>
+	<div>
 		<HighchartsReact highcharts={Highcharts} options={options} />
-	</Wrapper>
+	</div>
 ));

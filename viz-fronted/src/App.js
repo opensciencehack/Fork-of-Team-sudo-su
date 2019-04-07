@@ -6,7 +6,7 @@ import { MainActorsGraph } from './components/MainActorsGraph';
 import { RetweetRelation } from './components/RetweetRelation';
 import { TweetTimeSeries } from './components/TweetTimeSeries';
 import { MostUsedDevices } from './components/MostUsedDevices';
-import { PopularHashtags } from './components/PopularHashtags';
+import { HashTagWordCloud } from './components/HashTagWordCloud';
 
 const Intro = styled.div`
 	background-color: #282c34;
@@ -18,19 +18,34 @@ const Intro = styled.div`
 	color: white;
 `;
 
+const Wrapper = styled.div`
+	min-height: 100vh;
+`;
+
+const EntryWrapper = styled.div`
+
+	display: flex;
+	justify-content: space-around;
+	margin: 0 8em 8em 8em;
+`;
+
 const App = () => (
 	<div className="App">
+		<Wrapper>
 		<Intro>
 			<p>
 				Social Science dataset - Swedish (<b>sudo-su</b>)
 			</p>
 		</Intro>
 		<GeneralOverview />
-		<MainActorsGraph />
-		<MostUsedDevices />
+		</Wrapper>
+		<EntryWrapper>
+			<MainActorsGraph />
+			<MostUsedDevices />
+		</EntryWrapper>
 		<RetweetRelation />
+		<HashTagWordCloud />
 		<TweetTimeSeries />
-		<PopularHashtags />
 	</div>
 );
 

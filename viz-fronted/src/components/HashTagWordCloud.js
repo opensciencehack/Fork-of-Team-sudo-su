@@ -2,10 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-margin-bottom: 8em`;
+	margin: 4em 15em;
+`;
 
-export const RetweetRelation = () => (
+export const HashTagWordCloud = () => (
 	<Wrapper>
-		<div id="container" />
+		<div id="container-words" />
 	</Wrapper>
 );
