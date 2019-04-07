@@ -5,7 +5,7 @@ import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 
 const Div = styled.div`
-	margin: 4em 10em;
+
 `;
 
 const populateOptions = () => ({
@@ -14,13 +14,13 @@ const populateOptions = () => ({
 	},
 	chart: {
 		type: 'column',
-		height: (9 / 16) * 100 + '%' // 16:9 ratio
+		height: (3 / 4) * 100 + '%' // 16:9 ratio
 	},
 	title: {
 		text: 'Main Actors'
 	},
 	subtitle: {
-		text: 'Users with the most amount of tweets'
+		text: 'Users that tweeted most'
 	},
 	xAxis: {
 		type: 'category',
@@ -42,7 +42,7 @@ const populateOptions = () => ({
 		enabled: false
 	},
 	tooltip: {
-		pointFormat: 'Submitted tweets: <b>{point.y}</b>'
+		pointFormat: 'Posted tweets: <b>{point.y}</b>'
 	},
 	series: [
 		{

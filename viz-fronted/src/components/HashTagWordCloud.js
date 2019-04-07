@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-	margin: 4em 10em;
+	margin: 4em 15em;
 `;
 
-export const PopularHashtags = () => (
+export const HashTagWordCloud = () => (
 	<Wrapper>
 		<div id="container-words" />
 	</Wrapper>
