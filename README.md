@@ -11,3 +11,5 @@ The provided raw data has been analyzed with `python`.
 ## Deployment
 
 The visualization platform is available at: [http://open-science-hack.surge.sh/](http://open-science-hack.surge.sh/)
+
+Presentation: [here](https://prezi.com/view/xIeIuBdKk7IKfnFwRQF0/)
