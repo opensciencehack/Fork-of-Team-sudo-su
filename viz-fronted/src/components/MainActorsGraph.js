@@ -4,9 +4,7 @@ import styled from 'styled-components';
 import Highcharts from 'highcharts';
 import HighchartsReact from 'highcharts-react-official';
 
-const Div = styled.div`
-
-`;
+const Div = styled.div``;
 
 const populateOptions = () => ({
 	credits: {
@@ -17,7 +15,7 @@ const populateOptions = () => ({
 		height: (3 / 4) * 100 + '%' // 16:9 ratio
 	},
 	title: {
-		text: 'Main Actors'
+		text: 'Main Actors (Bar Graph)'
 	},
 	subtitle: {
 		text: 'Users that tweeted most'

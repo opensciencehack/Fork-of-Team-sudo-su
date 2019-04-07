@@ -4,10 +4,10 @@ Highcharts.chart('container', {
 	},
 	exporting: { enabled: false },
 	title: {
-		text: 'Retweet based dependency wheel'
+		text: 'Retweet Interactions (Dependency Wheel)'
 	},
 	subtitle: {
-		text: '<b>DiabetesSverige</b> is missing!'
+		text: 'Discover the main 20 actors in the conversation'
 	},
 	chart: {
 		height: (9 / 16) * 70 + '%' // 16:9 ratio
@@ -2917,7 +2917,10 @@ Highcharts.chart('container-words', {
 		}
 	],
 	title: {
-		text: 'Hashtag Word Cloud'
+		text: 'Hashtag Usage (Word Cloud)'
+	},
+	subtitle: {
+		text: 'Main tags and frequency'
 	}
 });
 
@@ -2932,7 +2935,10 @@ const options = {
 		height: (9 / 16) * 100 + '%' // 16:9 ratio
 	},
 	title: {
-		text: 'Topic Bubble Graph'
+		text: 'Topic Modelling (Bubble Graph)'
+	},
+	subtitle: {
+		text: 'Latent Dirichlet allocation'
 	},
 	tooltip: {
 		useHTML: true,
@@ -2960,175 +2966,174 @@ const options = {
 					color: 'black',
 					textOutline: 'none',
 					fontWeight: 'normal',
-					fontSize:'18px'
-				},
-
+					fontSize: '18px'
+				}
 			}
 		}
 	},
 	series: [
 		{
-			"name":"Topic 0",
-			"data":[
+			name: 'Topic 0',
+			data: [
 				{
-					"name":"blodsocker",
-					"value":214
+					name: 'blodsocker',
+					value: 214
 				},
 				{
-					"name":"finns",
-					"value":128
+					name: 'finns',
+					value: 128
 				},
 				{
-					"name":"m\u00e5nga",
-					"value":79
+					name: 'm\u00e5nga',
+					value: 79
 				},
 				{
-					"name":"m\u00e4nniskor",
-					"value":71
+					name: 'm\u00e4nniskor',
+					value: 71
 				},
 				{
-					"name":"sjukdom",
-					"value":68
+					name: 'sjukdom',
+					value: 68
 				},
 				{
-					"name":"bland",
-					"value":67
+					name: 'bland',
+					value: 67
 				},
 				{
-					"name":"borde",
-					"value":62
+					name: 'borde',
+					value: 62
 				}
 			]
 		},
 		{
-			"name":"Topic 1",
-			"data":[
+			name: 'Topic 1',
+			data: [
 				{
-					"name":"2-diabetes",
-					"value":231
+					name: '2-diabetes',
+					value: 231
 				},
 				{
-					"name":"dagens",
-					"value":91
+					name: 'dagens',
+					value: 91
 				},
 				{
-					"name":"v\u00e4rldsdiabetesdagen",
-					"value":81
+					name: 'v\u00e4rldsdiabetesdagen',
+					value: 81
 				},
 				{
-					"name":"sverige",
-					"value":78
+					name: 'sverige',
+					value: 78
 				},
 				{
-					"name":"socker",
-					"value":72
+					name: 'socker',
+					value: 72
 				},
 				{
-					"name":"diabetesgalan",
-					"value":70
+					name: 'diabetesgalan',
+					value: 70
 				},
 				{
-					"name":"\u00e4ldreboende",
-					"value":70
+					name: '\u00e4ldreboende',
+					value: 70
 				}
 			]
 		},
 		{
-			"name":"Topic 2",
-			"data":[
+			name: 'Topic 2',
+			data: [
 				{
-					"name":"kommer",
-					"value":656
+					name: 'kommer',
+					value: 656
 				},
 				{
-					"name":"swisha",
-					"value":575
+					name: 'swisha',
+					value: 575
 				},
 				{
-					"name":"diabetesfonden",
-					"value":571
+					name: 'diabetesfonden',
+					value: 571
 				},
 				{
-					"name":"tweet",
-					"value":524
+					name: 'tweet',
+					value: 524
 				},
 				{
-					"name":"insulin",
-					"value":385
+					name: 'insulin',
+					value: 385
 				},
 				{
-					"name":"jobbar",
-					"value":105
+					name: 'jobbar',
+					value: 105
 				},
 				{
-					"name":"morgon",
-					"value":102
+					name: 'morgon',
+					value: 102
 				}
 			]
 		},
 		{
-			"name":"Topic 3",
-			"data":[
+			name: 'Topic 3',
+			data: [
 				{
-					"name":"ligger",
-					"value":101
+					name: 'ligger',
+					value: 101
 				},
 				{
-					"name":"insulin",
-					"value":84
+					name: 'insulin',
+					value: 84
 				},
 				{
-					"name":"d\u00e5ligt",
-					"value":83
+					name: 'd\u00e5ligt',
+					value: 83
 				},
 				{
-					"name":"behandling",
-					"value":80
+					name: 'behandling',
+					value: 80
 				},
 				{
-					"name":"barndiabetesfonden",
-					"value":72
+					name: 'barndiabetesfonden',
+					value: 72
 				},
 				{
-					"name":"patienter",
-					"value":71
+					name: 'patienter',
+					value: 71
 				},
 				{
-					"name":"b\u00e4ttre",
-					"value":60
+					name: 'b\u00e4ttre',
+					value: 60
 				}
 			]
 		},
 		{
-			"name":"Topic 4",
-			"data":[
+			name: 'Topic 4',
+			data: [
 				{
-					"name":"insulinpump",
-					"value":433
+					name: 'insulinpump',
+					value: 433
 				},
 				{
-					"name":"dotter",
-					"value":432
+					name: 'dotter',
+					value: 432
 				},
 				{
-					"name":"sn\u00e4lla",
-					"value":425
+					name: 'sn\u00e4lla',
+					value: 425
 				},
 				{
-					"name":"twitter",
-					"value":420
+					name: 'twitter',
+					value: 420
 				},
 				{
-					"name":"troligen",
-					"value":418
+					name: 'troligen',
+					value: 418
 				},
 				{
-					"name":"tappat",
-					"value":414
+					name: 'tappat',
+					value: 414
 				},
 				{
-					"name":"fj\u00e4ll",
-					"value":412
+					name: 'fj\u00e4ll',
+					value: 412
 				}
 			]
 		}

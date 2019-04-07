@@ -15,7 +15,10 @@ const options = {
 		height: (3 / 4) * 100 + '%' // 16:9 ratio
 	},
 	title: {
-		text: 'Device usage'
+		text: 'Device Usage (Pie Chart)'
+	},
+	subtitle: {
+		text: 'Usage patters'
 	},
 	tooltip: {
 		pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
