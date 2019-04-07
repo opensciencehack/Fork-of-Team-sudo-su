@@ -32,15 +32,15 @@ const EntryWrapper = styled.div`
 const App = () => (
 	<div className="App">
 		<Wrapper>
-		<Intro>
-			<p>
-				Social Science dataset - Swedish (<b>sudo-su</b>)
-			</p>
-		</Intro>
-		<GeneralOverview />
+			<Intro>
+				<p>
+					Social Science dataset - Swedish (<b>sudo-su</b>)
+				</p>
+			</Intro>
+			<GeneralOverview />
 		</Wrapper>
 		<EntryWrapper>
-			<mainactorsgraph />
+			<MainActorsGraph />
 			<MostUsedDevices />
 		</EntryWrapper>
 		<RetweetRelation />
